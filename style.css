@@ -10,30 +10,51 @@ body, html {
   position: fixed;
 }
 
+@media (max-width: 600px) {
+  /* For a screen < 540px, this CSS will be read */
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar-inline-list li {
+  font-size: 40px;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.href-hover-bar i {
+  color: darkgrey;
+  padding: 20px 10px;
+}
+
+.href-hover-bar:hover i {
+  color: white;
+}
+
 .main {
   background:#EBEBEB;
   width: 88%;
+  margin-left: 10%;
   font-family:'Open Sans', sans-serif;
   color: #7d7d7d;
   font-size:15px;
   line-height:1.4em;
   display: inline-block;
-  margin-left: 10%;
 }
 
 .box{
   background: white;
-  padding: 6px;
+  padding: 20px;
   width: 90%;
   margin: 10px auto;
   text-align: center;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px lightgrey;
 }
 
 #favorite-books {
-  background: white;
-  padding: 6px;
-  width: 90%;
-  margin: 10px auto;
+  text-align: left;
 }
 
 h1, h2, h3 {
@@ -70,7 +91,7 @@ img {
 
 .book-title {
   color: #DD5555;
-  margin: 2px;
+  margin: 4px;
 }
 
 .book-author {
@@ -79,4 +100,34 @@ img {
 
 .book-description {
  margin: 2px;
+}
+
+.inline-list li {
+  color: blue;
+  font-size: 40px;
+  display: inline-block;
+  padding-left: 0px;
+  margin: 20px;
+}
+
+.row td {
+  padding: 10px;
+}
+
+.button-red {
+  background: #DD5555;
+  color: white;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.href-hover i {
+  color: grey;
+  margin: 20px;
+}
+
+.href-hover:hover i {
+  color: #DD5555;
 }
